@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using static Text_based_adventure.RogueClass.RogueClassStats;
+
 Console.WriteLine("Welcome adventurer");
 Console.WriteLine("You wake up and find 3 items in front of you, which do you pick up first?");
 Console.WriteLine("1: A black blade shrouded in smoke and a rune on its handle (Rogue Class)");
@@ -11,5 +12,5 @@ int classChoice = Convert.ToInt32(Console.ReadLine());
 if (classChoice == 1)
 {
     Console.WriteLine("You picked the Rogue class!");
-    Console.WriteLine($"Here are your stats: {RogueClass}");
+    Console.WriteLine($"Here are your stats: {RogueClassStats}");
 }
