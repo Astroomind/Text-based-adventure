@@ -1,4 +1,4 @@
-﻿using static Text_based_adventure.RogueClass.RogueClassStats;
+﻿using Text_based_adventure.RogueClass;
 
 Console.WriteLine("Welcome adventurer");
 Console.WriteLine("You wake up and find 3 items in front of you, which do you pick up first?");
@@ -11,6 +11,7 @@ int classChoice = Convert.ToInt32(Console.ReadLine());
 
 if (classChoice == 1)
 {
+    Rogue Roguestats = new Rogue();
     Console.WriteLine("You picked the Rogue class!");
-    Console.WriteLine($"Here are your stats: {RogueClassStats}");
+    Console.WriteLine($"Here are your stats: {Roguestats.health}");
 }
