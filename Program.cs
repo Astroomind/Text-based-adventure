@@ -58,14 +58,12 @@ switch (classChoice)
 }
 
 int userClass = classChoice;
-
 string dialogue = userClass switch
 {
     1 => "You pick up the blade and suddenly feel light on your feet.",
     2 => "You pick up the Staff and feel an enourmous amount of energy flowing through you.",
     3 => "You pick up the sword and shield, you feel stronger and its as if nothing could penetrate your skin."
 };
-
 Console.WriteLine(dialogue);
 
 
