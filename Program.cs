@@ -29,7 +29,7 @@ switch (classChoice)
         break;
     case 2:
         Mage MageStats = new Mage();
-        Console.WriteLine("You picked the Rogue class!");
+        Console.WriteLine("You picked the Mage class!");
         Console.WriteLine($"Here are your stats:");
         Console.WriteLine($"Health: {MageStats.health}");
         Console.WriteLine($"Stamina: {MageStats.stamina}");
@@ -43,7 +43,7 @@ switch (classChoice)
         break;
     case 3:
         Warrior WarriorStats = new Warrior();
-        Console.WriteLine("You picked the Rogue class!");
+        Console.WriteLine("You picked the Warrior class!");
         Console.WriteLine($"Here are your stats:");
         Console.WriteLine($"Health: {WarriorStats.health}");
         Console.WriteLine($"Stamina: {WarriorStats.stamina}");
@@ -56,4 +56,17 @@ switch (classChoice)
         Console.WriteLine($"Mana: {WarriorStats.mana}");
         break;
 }
+
+int userClass = classChoice;
+
+string dialogue = userClass switch
+{
+    1 => "You pick up the blade and suddenly feel light on your feet.",
+    2 => "You pick up the Staff and feel an enourmous amount of energy flowing through you.",
+    3 => "You pick up the sword and shield, you feel stronger and its as if nothing could penetrate your skin."
+};
+
+Console.WriteLine(dialogue);
+
+
 
