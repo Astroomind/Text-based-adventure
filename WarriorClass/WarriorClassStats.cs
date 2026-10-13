@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Text_based_adventure.WarriorClass
 {
-    internal class WarriorClassStats
+    public class Warrior
     {
-        int health = 120;
-        int stamina = 150;
-        int intelligence = 70;
-        int strength = 100;
-        int dexterity = 50;
-        int stealth = 0;
-        int baseDamage = 120;
-        int armour = 100;
-        int mana = 0;
+        public int health = 150;
+        public int stamina = 150;
+        public int intelligence = 10;
+        public int strength = 100;
+        public int dexterity = 40;
+        public int stealth = 0;
+        public int baseDamage = 120;
+        public int armour = 150;
+        public int mana = 0;
     }
 }
